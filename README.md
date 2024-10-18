@@ -6,6 +6,7 @@
 * Install Node.js [Node.js](https://nodejs.org/en/download/package-manager)
 
 
+
 ## Project setup
 
 *Open the project in VS Code and open terminal*  
@@ -13,7 +14,16 @@
 * This command will initialize a project and create the package. json file * 
 
 *Run* **npm install cypress --save-dev**
-* This command will install Cypress * 
+* This command will install Cypress *
+
+*Run* **npm i --save-dev cypress-mochawesome-reporter**
+* This command will install Mochawesome reporter
+* Add **reporter: 'cypress-mochawesome-reporter'** in the Cypress.config.js file 
+* Add  in the same config file inside the **setupNodeEvents(on, config){
+    **require('cypress-mochawesome-reporter/plugin')(on)**
+}**
+
+
 
 *Run* **npx cypress run**
 * This command will run all tests*
