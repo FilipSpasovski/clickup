@@ -17,7 +17,7 @@ describe('Data creation and deletion', () => {
       loginPage.enterPassword('Tester123#');
       loginPage.clickLoginButton();
       cy.wait(2000);
-    cy.get('[data-test="simple-bar__spaces__true"]').contains('Stefan API').click();
+    cy.get('[data-test="simple-bar__spaces__true"]').contains('API created task').click();
     cy.get('[data-test="simple-bar__spaces__true"]').contains('Api created folder').click();
     cy.get('[data-test="sidebar-flat-tree__item-name-Api created list"]', {timeout: 60000}).click();
     });

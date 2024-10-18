@@ -16,7 +16,7 @@ describe('Create a new ClickUp Space via API', () => {
         Authorization: apiKey  
       },
       body: {
-        "name": "Stefan API",
+        "name": "API created task",
         "multiple_assignees": true,
         "features": {
           "due_dates": {
@@ -55,7 +55,7 @@ describe('Create a new ClickUp Space via API', () => {
       
       expect(space_response.status).to.eq(200);
       expect(space_response.body).to.have.property('id'); 
-      expect(space_response.body.name).to.eq('Stefan API');
+      expect(space_response.body.name).to.eq('API created task');
       spaceid = space_response.body.id;
       cy.log(spaceid);
 

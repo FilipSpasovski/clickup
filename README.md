@@ -28,3 +28,4 @@
 * Refactor the code in order to improve it
 * Have all values stored in config file and read them from there in the tests instead of hardcoding them in the tests
 * Save the storage state on login in order to not log in each time as I am doing right now
+* Add report generation with Mochawesome	
