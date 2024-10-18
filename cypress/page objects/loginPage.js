@@ -34,7 +34,7 @@ class LoginPage {
     }
   
     assertSuccessfulLogin() {
-      cy.url().should('include', '/90121672763');
+      cy.url().should('include', '/9012380471');
     }
   }
   
