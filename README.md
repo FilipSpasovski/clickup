@@ -4,6 +4,7 @@
 
 * Download & Install [VS Code](https://code.visualstudio.com/download)
 * Install Node.js [Node.js](https://nodejs.org/en/download/package-manager)
+* Install LiveServer from VS Code extenstion tab in order to be able to open the report
 
 
 
@@ -34,8 +35,6 @@
 
 ### Points for improvement
 * Use FakerJS in order to create randomized names and escape hardcoding values
-* Track if any of the test fail and if yes do not execute the after()
 * Refactor the code in order to improve it
 * Have all values stored in config file and read them from there in the tests instead of hardcoding them in the tests
 * Save the storage state on login in order to not log in each time as I am doing right now
-* Add report generation with Mochawesome	
